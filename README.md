@@ -7,7 +7,8 @@ In my thesis, I investigated the EV charging behavior in real smart-meter data. 
 The project is organized as follows:
 - Not contained here - can be made available upon request - CKW Open Data Quality Check: Name is a bit misleading - contains files that do much more than just a quality check on CKW Open data. Files to preprocess open data, add synthetic charging sessions and optimization routine to find best parameters for session identification.
 - EV_charging_optimization: Given some extracted charging timeseries, we can investigate the effect of different EV charging strategies from a DSO perspective. No "optimization" is done here - it's only an assessment of different strategies using parallelized Monte Carlo simulations
-- PRIVATE_SMD initial checks: On the private smart meter data that was used to analyze real customer behavior, some preprocessing had to be done. 
+- PRIVATE_SMD initial checks: On the private smart meter data that was used to analyze real customer behavior, some preprocessing had to be done.
+- ev_charging_timeseries.parquet: Contains more than 400 11 kW EV charging timeseries from real life smart-meter data using the disaggregation method described in my thesis. Can be used for grid impact studies.
 
 ## Installation
 Python 3.11,
