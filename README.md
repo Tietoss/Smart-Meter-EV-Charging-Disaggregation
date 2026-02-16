@@ -1,15 +1,13 @@
-# 2442_Lukas_Elmiger Study of the EV Charging Behavior and its Impact on Real Low/Medium Voltage Power Grids
+# 2442_Lukas_Elmiger Study of the EV Charging Behavior and its Impact on Real Low/Medium Voltage Power Grids (https://doi.org/10.3929/ethz-c-000782878)
 
 ## Description
-This project contains all files belonging to my master thesis on the "Study of the EV Charging Behavior and its Impact on Real Low/Medium Voltage Power Grids".
+This project contains all files belonging to my master thesis on the "Study of the EV Charging Behavior and its Impact on Real Low/Medium Voltage Power Grids" which is available by open-access here: https://doi.org/10.3929/ethz-c-000782878
 In my thesis, I investigated the EV charging behavior in real smart-meter data. The smart-meter data also contained other residential appliances. Therefore, an algorithm was developed to extract charging from aggregated load signals. Having extracted the EV charging load time series, a statistical analysis was performed to extract certain interesting metrics for the identified load time series. Finally, different charging strategies and their impact were investigated using Monte-Carlo simulations. 
 
 The project is organized as follows:
-- CKW Open Data Quality Check: Name is a bit misleading - contains files that do much more than just a quality check on CKW Open data. Files to preprocess open data, add synthetic charging sessions and optimization routine to find best parameters for session identification.
+- Not contained here - can be made available upon request - CKW Open Data Quality Check: Name is a bit misleading - contains files that do much more than just a quality check on CKW Open data. Files to preprocess open data, add synthetic charging sessions and optimization routine to find best parameters for session identification.
 - EV_charging_optimization: Given some extracted charging timeseries, we can investigate the effect of different EV charging strategies from a DSO perspective. No "optimization" is done here - it's only an assessment of different strategies using parallelized Monte Carlo simulations
 - PRIVATE_SMD initial checks: On the private smart meter data that was used to analyze real customer behavior, some preprocessing had to be done. 
-- Smart_Charging_App_CKW: At the beginning, the CKW Smart Charging App (controlling charging sessions of certain customers) was available. After preprocessing, it turned out, that the data is not representing typical customer behavior.
-- Weekly meeting: Contains the slides of the weekly exchange with the supervisor + monthly exchange with the supervisors from the company. 
 
 ## Installation
 Python 3.11,
