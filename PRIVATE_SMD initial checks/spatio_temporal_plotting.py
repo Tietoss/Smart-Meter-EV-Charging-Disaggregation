@@ -510,20 +510,18 @@ def generate_movie(df, shapefile_gdf, output_path, fps=80, max_marker_size=300):
 
 def main():
     # File path to the pickled timeseries EV charging data
-    fpath_ts = ("//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/results/"
-                "all_identified_charging_ts.pkl")
+    fpath_ts = ("fpath/results/all_identified_charging_ts.pkl")
     # Shape file path for CKW area
-    fpath_shp = "C:/Users/luelmiger/temp/strom_oe_flaeche.shp"
+    fpath_shp = "fpath/strom_oe_flaeche.shp"
     # File path containing the preprocessed location data
-    fpath_loc = "//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/loc_data.csv"
-    res_direc = "//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/map_plot/"
+    fpath_loc = "fpath/loc_data.csv"
+    res_direc = "fpath/map_plot/"
     # Output paths
-    frame_dir = "//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/map_plot/frames"
+    frame_dir = "fpath/map_plot/frames"
     output_video_path = res_direc + "ev_charging.mp4"
-    population_density_path = ("//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/map_plot/"
-                               "population_density_switzerland_2023_bfs.csv")
+    population_density_path = ("fpath/population_density_switzerland_2023_bfs.csv")
 
-    municipality_shp_file = "C:/Users/luelmiger/temp/swiss_municipalities/swissBOUNDARIES3D_1_5_TLM_HOHEITSGEBIET.shp"
+    municipality_shp_file = "fpath/swiss_municipalities/swissBOUNDARIES3D_1_5_TLM_HOHEITSGEBIET.shp"
 
     # Read the pickled data
     with open(fpath_ts, "rb") as f:
