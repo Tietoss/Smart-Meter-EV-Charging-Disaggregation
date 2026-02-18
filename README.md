@@ -18,7 +18,7 @@ also see requirements file
 lukas.elmiger@ckw.ch
 luki.elmiger@hotmail.com
 
-Feel free to contact me - I will try to answer questions related to this code and/or my thesis.
+Feel free to contact me - I cannot promise to be able to help though. Please also refer to the documentation in the aforementioned publication.
 
 ## Authors and acknowledgment
 Special thanks to my project supervisor, María Parajeles Herrera from PSL ETH Zurich.
