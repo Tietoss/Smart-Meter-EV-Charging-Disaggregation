@@ -113,7 +113,7 @@ for file_path in file_paths:
                 group = grouped.get_group(id)
                 group = group[['messzeitstempel', 'wert_W']].sort_values(by='messzeitstempel')
 
-                output_file = (f"//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/"
+                output_file = (f"filepath/"
                                f"sorted_by_id/{id}.csv")
                 group.to_csv(output_file, index=False)
                 print(f"Created {output_file}")
