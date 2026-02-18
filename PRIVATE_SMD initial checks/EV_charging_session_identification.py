@@ -49,8 +49,7 @@ warnings.filterwarnings("ignore", message="The PostScript backend does not suppo
 """
 temp - delete this
 """
-path = ("//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/sorted_by_id/"
-        "CH1003601234500000000000000006601.csv")
+path = ("xy.csv")
 
 """
 Helper methods
@@ -1859,7 +1858,7 @@ def main():
                  if not file.endswith("_missing_times.csv")]
 
     """
-    plot_extraction('CH1003601234500000000000005231743',
+    plot_extraction('xy',
                     start_plot=pd.to_datetime('2024-01-01 00:00:00'), end_plot=pd.to_datetime('2024-01-10 08:00:00'))
     """
 
@@ -1903,7 +1902,7 @@ def main():
         # Store corrected (converted to winter time) time series by ID for export to pickle
         corrected_timeseries_by_id[idecomp.id] = corrected_ts
 
-        # plot_extraction('CH1003601234500000000000000038871', store_all=True)
+        # plot_extraction('xy', store_all=True)
 
         # Add time series to total charging time series
         if agg_charging_timeseries_kW is None:
