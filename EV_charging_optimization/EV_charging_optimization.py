@@ -8,7 +8,7 @@ This file is used to optimize EV charging concurrency - based on real EV chargin
 Lots of plotting functionality is implemented as well to see the effect of different EV charging strategies from a
 DSO perspective.
 
-Remark: Very heavy CPU load - takes more than 1 day in this form on PSL server with 22 cores
+Remark: Very heavy CPU load - takes more than 1 day in this form on PSL ETH server with 22 cores
 
 Input: File path containing all the EV charging sessions in a .parquet file
 """
@@ -33,8 +33,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 
 from tqdm import tqdm
 
-df = pd.read_parquet("//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/results/"
-                     "11kw_charging_timeseries/charging_timeseries.parquet")
+df = pd.read_parquet("filepath/charging_timeseries.parquet")
 ALL_SLOTTED_TIMESERIES = None
 import scienceplots
 plt.style.use('science')
