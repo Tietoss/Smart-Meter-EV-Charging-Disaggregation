@@ -8,7 +8,7 @@ converted to power values later on). Also, new column names, to correspond to th
 Run main, select source files --> find data in sorted_by_id file.
 
 Result: Complete interpolated data for further processing (ideally you still have to break it down into one year of
-data - small deviations shouldn't worsen the extraction performance too much - has not been systemically tested though.
+data - small deviations shouldn't worsen the extraction performance too much - has not been systemically tested though.)
 """
 
 import pandas as pd
@@ -262,7 +262,7 @@ def filter_and_delete_files(directory):
 
 
 def plot_histo_energy():
-    directory = "//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/sorted_by_id/"
+    directory = "filepath/sorted_by_id/"
 
     # List to store the sum of 'value_kwh' for each file
     sums = []
@@ -486,13 +486,13 @@ if __name__ == "__main__":
         print("No files selected. Exiting...")
     else:
         # Output directory
-        output_dir = "//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/sorted_by_id/"
+        output_dir = "filepath/sorted_by_id/"
         os.makedirs(output_dir, exist_ok=True)
 
         # Process files
         process_files(file_paths, output_dir)
 
-    direc = "//d.ethz.ch/groups/itet/eeh/psl/stud/luelmiger/private/unlabelled_smd/sorted_by_id/"
+    direc = "filepath/sorted_by_id/"
 
     # Filter and delete files
     filter_and_delete_files(direc)
